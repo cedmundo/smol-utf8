@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
+#define UNICODE_REPLACEMENT_CHARACTER 0xFFFD
 
 uint8_t su8_enc_cp_to_bytes(uint32_t codepoint, char *dest);
 uint8_t su8_dec_bytes_to_cp(const char src[4], uint32_t *codepoint);
